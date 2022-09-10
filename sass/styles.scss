@@ -244,7 +244,7 @@ header{
 
 .home-banner{
   position: relative;
-  padding: 250px 0 150px;
+  padding: 200px 0 150px;
   overflow: hidden;
   .bg{
     img{
@@ -763,23 +763,28 @@ p.label{
 .two-columns{
   padding: 205px 0 100px;
   h2{
-    margin-bottom: 247px;
+    margin-bottom: 50px;
     text-align: center;
   }
   .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 15%;
+    align-items: center;
+    padding: 0;
+    figure{
+      width: 400px;
+      margin: 0 60px;
+    }
     .item{
       width: 45%;
       max-width: 400px;
       p{
         margin: 0;
-        text-align: center;
+        text-align: right;
       }
       p.label{
-        text-align: center;
+        text-align: right;
         text-transform: uppercase;
         color: #FFF620;
         margin-bottom: 2px;
@@ -791,10 +796,15 @@ p.label{
         font-weight: 700;
         font-size: 18px;
         line-height: 24px;
-        text-align: center;
+        text-align: right;
         letter-spacing: 0.01em;
         text-transform: uppercase;
         color: #FFFFFF;
+      }
+    }
+    .item-2{
+      &>*{
+        text-align: left!important;
       }
     }
   }

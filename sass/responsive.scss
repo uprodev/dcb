@@ -58,6 +58,10 @@
   .home-banner .img-wrap .item-1 {
     transform: translate(-66%, -112%);
   }
+  .two-columns .content figure {
+    width: 300px;
+    margin: 0 20px;
+  }
 }
 @media (max-width:1500px){
   .content-width{
@@ -159,6 +163,24 @@
   }
   footer .footer-line-1 .footer-menu ul{
     width: 400px;
+  }
+  .two-columns .content figure{
+    width: 100%;
+    text-align: center;
+    order: 0;
+    margin: 0 0 30px;
+    img{
+      width: 300px;
+    }
+  }
+  .two-columns .content .item{
+    order: 1;
+  }
+  .two-columns .content{
+    align-items: flex-start;
+  }
+  .two-columns .content figure + .item{
+    margin-left: 40px;
   }
 }
 
@@ -426,6 +448,14 @@
   }
   .tab-item .wrap .item .top{
     height: 75px;
+  }
+  .two-columns .content figure + .item{
+    margin: 30px 0 0;
+  }
+  .two-columns .content .item, .two-columns .content .item-2{
+    &>*{
+      text-align: center!important;
+    }
   }
 }
 
