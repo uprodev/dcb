@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DCB</title>
+
+	
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/font.css"/>
+
+	<link rel="stylesheet" type="text/css" href="fonts/FA5PRO-master/css/all.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/nice-select.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/aos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+	
+</head>
+<body >
+	<div class="line line-1"></div>
+	<div class="line line-2"></div>
+	<div class="line line-3"></div>
+  <header>
+		<div class="top-line">
+			<div class="content-width">
+				<div class="logo-wrap">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="right">
+					<nav class="top-menu">
+						<ul>
+							<li ><a href="#section3" class="scroll">How it works</a></li>
+							<li><a href="#ecosystem" class="scroll">Ecosystem</a></li>
+							<li ><a href="#faq" class="scroll">FAQ</a></li>
+						<!--	<li ><a href="#tabs" class="scroll">Staking</a></li>-->
+						<!--	<li ><a href="pdf/pdf.pdf">Whitepaper</a></li>-->
+						</ul>
+					</nav>
+					<div class="btn-wrap">
+						<a href="https://swap.decentral-bank.finance/swap" class="btn-default" target="_blank">SWAP</a>
+					</div>
+					<div class="wrap-menu">
+						<div class="open-menu">
+							<a href="#menu-responsive">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </header>
+
+	<div class="menu-responsive" id="menu-responsive" style="display: none">
+		<div class="menu-wrap">
+			<nav class="mob-menu">
+				<ul>
+					<li ><a href="#section3" class="scroll">How it works</a></li>
+					<li><a href="#ecosystem" class="scroll">Ecosystem</a></li>
+					<li ><a href="#faq" class="scroll">FAQ</a></li>
+				<!--	<li ><a href="#tabs" class="scroll">Staking</a></li>-->
+				<!--	<li ><a href="pdf/pdf.pdf">Whitepaper</a></li>-->
+				</ul>
+			</nav>
+			<div class="btn-wrap">
+				<a href="https://swap.decentral-bank.finance/swap" class="btn-default" target="_blank">SWAP</a>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="home-banner bg-img">
+			<div class="bg">
+				<img src="img/after-1.png" alt="">
+			</div>
+			<div class="content-width">
+				<div class="text">
+					<h1>Meet <b>NEAR</b> <span>-native</span>
+						stablecoin: <b>$USN</b></h1>
+					<div class="soc-wrap">
+						<ul>
+							<li><a href="https://medium.com/@dcntrlbank"><img src="img/icon-2.svg" alt=""></a></li>
+							<li><a href="https://discord.com/invite/decentralbank"><i class="fa-brands fa-discord"></i></a></li>
+					<!--		<li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>-->
+							<li><a href="https://twitter.com/DcntrlBank"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="https://github.com/DecentralBankDAO"><i class="fa-brands fa-github"></i></a></li>
+
+						<!--	<li><a href="#tabs" class="btn-black scroll">CHECK APY</a></li>-->
+						</ul>
+					</div>
+				</div>
+				<div class="img-wrap">
+					<img src="img/img-1.png" alt="" class="bg-img">
+					<div class="item item-1"><img src="img/icon-1-1.svg" alt=""></div>
+					<div class="item item-2"><img src="img/icon-1-2.svg" alt=""></div>
+					<div class="item item-3"><img src="img/icon-1-3.svg" alt=""></div>
+					<div class="item item-4"><img src="img/icon-1-4.svg" alt=""></div>
+					<div class="item item-5"><img src="img/icon-1-5.svg" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="progress-block">
+			<div class="content-width">
+				<div class="progress-wrap">
+					<div class="left">
+						<p class="label">USN Total Supply</p>
+						<h6 class="numbers-1" id="numbers-1">0</h6>
+					</div>
+					<div class="right">
+						<div class="progress">
+							<div class="progress-inner"></div>
+						</div>
+						<div class="info">
+							<p>USN Circulating Supply <b>112,879,228.5</b></p>
+							<p>% of Total Supply <b>0.0079%</b></p>
+						</div>
+					</div>
+				</div>
+				<div class="card-wrap">
+					<div class="card card-big">
+						<div class="head">
+							<p class="top">CDP CORE</p>
+							<p class="top">Stableswap Core</p>
+						</div>
+						<div class="content">
+							<p><span>USDT</span><b>76,714,988.32 (68%)</b></p>
+							<p><span>NEAR</span><b>86,19,148.86 (23%)</b></p>
+							<p><span>AURORA</span><b>76,714,8.32 (9%)</b></p>
+							<p><span>ETH</span><b>8,619,148.86 (0.093%)</b></p>
+							<p><span>stNEAR</span><b>76,78.32 (9%)</b></p>
+							<p><span>Linear</span><b>86,619,48.86 (0.105%)</b></p>
+							<p><span>BTC</span><b>76,714,988.32 (67%)</b></p>
+							<p><span>USDC</span><b>86,9,148.86 (0.005%)</b></p>
+							<p><span>USDT</span><b>76,714,988.32 (70%)</b></p>
+							<p><span>USDC</span><b>86,619,148.86 (30%)</b></p>
+
+						<!--	<div class="btn-wrap">
+								<a href="#" class="btn-default">DETAILS</a>
+							</div>-->
+
+						</div>
+					</div>
+					<div class="card card-small" style="display: none">
+						<a href="#" class="link"><i class="fal fa-long-arrow-right"></i></a>
+						<h5>144.7%</h5>
+						<h6>Total Collateral ratio</h6>
+						<p>was 145,33% last day</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="img-text img-text-1" id="section3">
+			<div class="content-width">
+				<div class="item">
+					<div class="text">
+						<p class="label">Phase I</p>
+						<h2>Native Sustainable Yields</h2>
+						<div class="text-wrap">
+							<p>Decentral Bank will have ongoing incentive programs, funded by staked NEAR, which will both support the proof of stake consensus mechanism and boost DeFi on the NEAR and Aurora ecosystems.</p>
+						</div>
+						<div class="link-wrap" style="display:none;">
+						<!--	<a href="#tabs" class="link-site scroll">How to earn award <i class="fal fa-long-arrow-right"></i></a>-->
+						</div>
+					</div>
+					<figure>
+						<img src="img/img-4.png" alt="">
+						<div class="img-wrap">
+							<img src="img/img-6.png" alt="">
+						</div>
+					</figure>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="two-columns">
+			<div class="content-width">
+				<h2>Two cores for minting USN</h2>
+				<div class="content">
+					<div class="item">
+						<p class="label">CORE 1</p>
+						<h6>Stableswap</h6>
+						<p>Mint/redeem USN with other stable coins at a 1:1 ratio. Reserve Fund is secured from drying in case of one of the stable coins losing its peg</p>
+
+					</div>
+					<div class="item">
+						<p class="label">CORE 1</p>
+						<h6>Collateralized Debt Position</h6>
+						<p>Borrow USN against whitelisted volatile cryptocurrencies. Fast and effective liquidation mechanism.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="img-text">
+			<div class="content-width">
+				<div class="item">
+					<div class="text">
+						<p class="label">Phase 3</p>
+						<h2>Money Market functionality</h2>
+						<div class="text-wrap">
+							<p>Open up new opportunities for DeFi users looking for additional sources of revenue and will unlock more liquidity in the NEAR and Aurora ecosystems.</p>
+							<p>Mint USN when borrowing against whitelisted volatile cryptocurrencies. Across chains.</p>
+						</div>
+						<div class="link-wrap">
+							<a href="https://app.burrow.cash/#/deposit" class="link-site " target="_blank">BORROW <i class="fal fa-long-arrow-right"></i></a>
+						</div>
+					</div>
+					<figure>
+						<img src="img/img-4.png" alt="">
+					</figure>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="ecosystem" id="ecosystem">
+			<div class="content-width">
+				<h2>Our ecosystem</h2>
+				<div class="content">
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+							<img src="img/logo-1-1.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item" >
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+							<img src="img/logo-1-2.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150">
+							<img src="img/logo-1-3.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+							<img src="img/logo-1-4.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250">
+							<img src="img/logo-1-5.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+							<img src="img/logo-1-6.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="350">
+							<img src="img/logo-1-7.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+							<img src="img/logo-1-8.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="450">
+							<img src="img/logo-1-9.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+							<img src="img/logo-1-10.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="550">
+							<img src="img/logo-1-11.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="logo-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="600">
+							<img src="img/logo-1-12.svg" alt="">
+						</div>
+						<div class="bg-wrap">
+							<img src="img/icon-3.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="btn-wrap">
+					<a href="https://discord.com/invite/decentralbank" class="btn-default">Join Ecosystem</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="step-block">
+			<div class="content-width">
+				<div class="title">
+					<h2>In the near future, the community can expect:</h2>
+					<div class="link-wrap">
+						<a href="https://discord.com/invite/decentralbank" class="link-site " target="_blank"><img src="img/icon-dis.svg" alt="">Join us in Discord <i class="fal fa-long-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="content">
+					<ul>
+						<li data-aos="fade-down" data-aos-duration="1000" >Public dashboard</li>
+						<li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="50">v3.0 Whitepaper </li>
+						<li class="item-2" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="100">$USN integration on all major <br>NEAR and Aurora dapps </li>
+						<li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="150">Fiat on/off ramps</li>
+						<li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="200">All transactions in USN to be paid in USN</li>
+						<li class="item-2" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="250">Multichain expansion,<br> cross-chain minting</li>
+						<li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">Payment in real-world commerces</li>
+						<li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="350">Off-chain loans</li>
+					</ul>
+					<div class="link-wrap">
+						<a href="#">... AND MANY OTHERS</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="img-text">
+			<div class="content-width">
+				<div class="item">
+					<div class="text">
+						<p class="label">Phase 3</p>
+						<h2>$USN APR is determined by the market</h2>
+						<div class="text-wrap">
+							<p>$USN will grow sustainably and its growth will depend on pure offer / demand mechanics determined entirely by the market</p>
+							<p><span>APR = function of $NEAR price + (% of the $NEAR in supply)* earning rewards</span></p>
+							<p>APR will therefore always reach an equilibrium that will be entirely determined by the market</p>
+						</div>
+
+					</div>
+					<figure>
+						<img src="img/img-4.png" alt="">
+						<div class="img-wrap">
+							<img src="img/img-3.png" alt="">
+						</div>
+					</figure>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="tabs-wrap" id="tabs" style="display:none">
+			<div class="content-width">
+				<h2>How to earn yield and swap $USN</h2>
+
+				<div class="tabs">
+					<ul class="tabs-menu">
+						<li>All</li>
+						<li>Yield</li>
+						<li>SWAP MINT REDEEM</li>
+						<li>CEX</li>
+
+					</ul>
+					<div class="tab-content">
+						<div class="tab-item">
+							<div class="wrap">
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>PEM – USN</h6>
+											<p>$10.66K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-1.png" alt="">
+											<img src="img/img-5-2.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$683.30K</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>81.73%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>USN – cUSD</h6>
+											<p>$7.82K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-3.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$1.99M</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>20.32%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>USN – USDT</h6>
+											<p>$201.77K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-4.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$85.72M</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>12.12%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>USN – wNEAR</h6>
+											<p>$10.66K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-5.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$186.34K</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>44%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item item-3">
+									<div class="top">
+										<div class="left">
+											<h6>USN – wNEAR</h6>
+											<p>$10.66K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-6.png" alt="">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-3.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$186.34K</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>44%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn-default">Load more</a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item">
+							<div class="wrap">
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>PEM – USN</h6>
+											<p>$10.66K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-1.png" alt="">
+											<img src="img/img-5-2.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$683.30K</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>81.73%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>USN – cUSD</h6>
+											<p>$7.82K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-3.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$1.99M</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>20.32%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="btn-wrap">
+								</div>
+							</div>
+						</div>
+						<div class="tab-item">
+							<div class="wrap">
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>PEM – USN</h6>
+											<p>$10.66K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-1.png" alt="">
+											<img src="img/img-5-2.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$683.30K</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>81.73%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="btn-wrap">
+								</div>
+							</div>
+						</div>
+						<div class="tab-item">
+							<div class="wrap">
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>PEM – USN</h6>
+											<p>$10.66K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-1.png" alt="">
+											<img src="img/img-5-2.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$683.30K</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>81.73%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>USN – cUSD</h6>
+											<p>$7.82K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-3.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$1.99M</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>20.32%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="top">
+										<div class="left">
+											<h6>USN – USDT</h6>
+											<p>$201.77K / week</p>
+										</div>
+										<div class="right">
+											<img src="img/img-5-2.png" alt="">
+											<img src="img/img-5-4.png" alt="">
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="bottom-item">
+											<p>Total stalked</p>
+											<h6>$85.72M</h6>
+										</div>
+										<div class="bottom-item">
+											<p>APR</p>
+											<h6>12.12%</h6>
+										</div>
+									</div>
+								</div>
+								<div class="btn-wrap">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq" id="faq">
+			<div class="video-bg">
+				<video poster="" autoplay="true" loop muted>
+					<source src="video/fon.mov" type="video/mp4">
+				</video>
+			</div>
+			<div class="content-width">
+				<div class="title">
+					<h2>Frequently asked questions</h2>
+					<div class="link-wrap">
+						<a href="mailto:dcntrlbankdao@gmail.com" class="link-site">CONTACT US <i class="fal fa-long-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="content">
+					<ul class="accordion">
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>What is $USN? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>What is Decentral Bank? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>How can I enjoy the yield from $USN? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>How does $USN maintain its peg? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>How can I get, exchange or trade $USN? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>What does $USN v2.0 compare to $USN v1.0 and what is the difference between Phase I and Phase II? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>How Does $USN compare to other stablecoins? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>Who will integrate $USN? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>What makes $USN interesting? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<div class="accordion-thumb"><p>What is the roadmap for $USN? <i class="fal fa-long-arrow-right"></i></p></div>
+							<div class="accordion-panel">
+								<p>Every major dApp in the $NEAR and $AURORA ecosystem will integrate $USN to seize the yield opportunities it generates and its easy and fast transaction settlements: DEXes, Money markets, Orderbooks, fiat on/off-ramps and new applications that will be built specifically around $USN.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	</main>
+
+  <footer>
+    <div class="content-width">
+			<div class="footer-line footer-line-1">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img src="img/logo-footer.svg" alt="">
+					</a>
+				</div>
+				<nav class="footer-menu">
+					<ul>
+						<li><a href="https://swap.decentral-bank.finance/swap" target="_blank">SWAP</a></li>
+					<!--	<li><a href="#">Explorer</a></li>-->
+						<li><a href="#ecosystem" class="scroll">Ecosystem</a></li>
+					<!--	<li><a href="#tabs" class="scroll">Staking</a></li>-->
+						<li><a href="#section3" class="scroll">How it works</a></li>
+					<!--	<li><a href="pdf/pdf.pdf">Whitepaper</a></li>-->
+						<li><a href="#faq" class="scroll">FAQ</a></li>
+					</ul>
+				</nav>
+				<div class="soc-wrap">
+					<ul>
+						<li><a href="https://medium.com/@dcntrlbank"><img src="img/icon-2.svg" alt=""></a></li>
+						<li><a href="https://discord.com/invite/decentralbank"><i class="fa-brands fa-discord"></i></a></li>
+						<!--		<li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>-->
+						<li><a href="https://twitter.com/DcntrlBank"><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href="https://github.com/DecentralBankDAO"><i class="fa-brands fa-github"></i></a></li>
+
+
+					</ul>
+				</div>
+			</div>
+			<div class="footer-line footer-line-2">
+				<p>(c) Decentral Bank 2022</p>
+				<p>Powered by <a href="https://www.spacespire.com/"><img src="img/logo-2.svg" alt=""></a></p>
+			</div>
+    </div>
+  </footer>
+
+	<div id="default-popup " style="display:none;">
+		<div class="popup-main">
+		</div>
+	</div>
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
