@@ -1244,6 +1244,41 @@ p.label {
 .accordion-panel {
   display: none;
   padding: 30px 0 30px 77px; }
+  .accordion-panel p {
+    margin-bottom: 20px; }
+  .accordion-panel p:last-child {
+    margin-bottom: 0; }
+  .accordion-panel ul {
+    margin-bottom: 20px; }
+    .accordion-panel ul > li {
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 2px; }
+      .accordion-panel ul > li:before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 100%;
+        background: #898983; }
+      .accordion-panel ul > li ul {
+        margin-bottom: 10px; }
+        .accordion-panel ul > li ul > li:before {
+          display: none; }
+  .accordion-panel ol {
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: decimal; }
+    .accordion-panel ol > li {
+      list-style: inherit; }
+    .accordion-panel ol ul {
+      margin-bottom: 10px; }
+      .accordion-panel ol ul > li:before {
+        display: none; }
+  .accordion-panel ul:last-child, .accordion-panel ol:last-child {
+    margin-bottom: 0; }
 
 .is-active .accordion-thumb:after {
   top: 0;

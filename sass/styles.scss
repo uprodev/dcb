@@ -1253,6 +1253,57 @@ p.label{
 .accordion-panel{
   display: none;
   padding: 30px 0 30px 77px;
+  p{
+    margin-bottom: 20px;
+  }
+  p:last-child{
+    margin-bottom: 0;
+  }
+  ul{
+    margin-bottom: 20px;
+    &>li{
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 2px;
+      &:before{
+        position: absolute;
+        top: 9px;
+        left: 0;
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 100%;
+        background: #898983;
+      }
+      ul{
+        margin-bottom: 10px;
+        &>li{
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  ol{
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: decimal;
+    &>li{
+      list-style: inherit;
+    }
+    ul{
+      margin-bottom: 10px;
+      &>li{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+  ul:last-child, ol:last-child{
+    margin-bottom: 0;
+  }
 }
 .is-active{
   .accordion-thumb{
